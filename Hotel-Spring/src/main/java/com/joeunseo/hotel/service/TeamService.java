@@ -1,4 +1,3 @@
-/*
 package com.joeunseo.hotel.service;
 
 import com.joeunseo.hotel.model.entity.TeamEntity;
@@ -13,4 +12,3 @@ public interface TeamService {
     Boolean deleteById(Long id);
     Boolean save(TeamEntity entity);
 }
-*/
