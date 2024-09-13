@@ -1,44 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Twitter -->
-    <meta name="twitter:site" content="@themepixels">
-    <meta name="twitter:creator" content="@themepixels">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Shamcey">
-    <meta name="twitter:description" content="Premium Quality and Responsive UI for Dashboard.">
-    <meta name="twitter:image" content="http://themepixels.me/shamcey/img/shamcey-social.png">
-
-    <!-- Facebook -->
-    <meta property="og:url" content="http://themepixels.me/shamcey">
-    <meta property="og:title" content="Shamcey">
-    <meta property="og:description" content="Premium Quality and Responsive UI for Dashboard.">
-
-    <meta property="og:image" content="http://themepixels.me/shamcey/img/shamcey-social.png">
-    <meta property="og:image:secure_url" content="http://themepixels.me/shamcey/img/shamcey-social.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="600">
-
-    <!-- Meta -->
-    <meta name="description" content="Premium Quality and Responsive UI for Dashboard.">
-    <meta name="author" content="ThemePixels">
-
-
-    <title>Shamcey Responsive Bootstrap 4 Admin Template</title>
-
-    <!-- Vendor css -->
-    <link href="../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
-    <link href="../lib/Ionicons/css/ionicons.css" rel="stylesheet">
-    <link href="../lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
-
-    <!-- Shamcey CSS -->
-    <link rel="stylesheet" href="../css/shamcey.css">
-  </head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head th:replace="fragment/header::header"></head>
 
   <body>
 
@@ -511,18 +473,15 @@
           </div><!-- col-9 -->
         </div><!-- row -->
       </div><!-- sh-pagebody -->
-      <div class="sh-footer">
-        <div>Copyright &copy; 2017. All Rights Reserved. Shamcey Dashboard Admin Template</div>
-        <div class="mg-t-10 mg-md-t-0">Designed by: <a href="http://themepixels.me">ThemePixels</a></div>
-      </div><!-- sh-footer -->
+      <div th:replace="fragment/footer :: footer"></div>
     </div><!-- sh-mainpanel -->
 
-    <script src="../lib/jquery/jquery.js"></script>
-    <script src="../lib/popper.js/popper.js"></script>
-    <script src="../lib/bootstrap/bootstrap.js"></script>
-    <script src="../lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <script th:src="@{/lib/jquery/jquery.js}"></script>
+    <script th:src="@{/lib/popper.js/popper.js}"></script>
+    <script th:src="@{/lib/bootstrap/bootstrap.js}"></script>
+    <script th:src="@{/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js}"></script>
 
-    <script src="../js/shamcey.js"></script>
+    <script th:src="@{/js/shamcey.js}"></script>
     <script>
       $(function() {
 
